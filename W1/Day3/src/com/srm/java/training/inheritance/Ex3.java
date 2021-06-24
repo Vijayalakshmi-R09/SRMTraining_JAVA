@@ -30,19 +30,33 @@ class Manager extends Person
 public class Ex3 {
 
 	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
 		Employees e=new Employees();
-		e.name="Zen";
-		e.age=24;
-		e.phno="8974563210";
-		e.address="no89,hy street";
-		e.salary=50000.00;
+		System.out.println("Enter Employee details:");
+		System.out.println("Name: ");
+		e.name=sc.next();
+		System.out.println("Age: ");
+		e.age=sc.nextInt();
+		System.out.println("PH.no: ");
+		e.phno=sc.next();
+		System.out.println("Adress: ");
+		e.address=sc.next();
+		System.out.println("Salary: ");
+		e.salary=sc.nextDouble();
 		Manager m=new Manager(); 
-		m.name="Zen";
-		m.age=24;
-		m.phno="8974563210";
-		m.address="no89,hy street";
-		m.salary=50000.00;
+		System.out.println("\nEnter Manager details:");
+		System.out.println("Name: ");
+		m.name=sc.next();
+		System.out.println("Age: ");
+		m.age=sc.nextInt();
+		System.out.println("PH.no: ");
+		m.phno=sc.next();
+		System.out.println("Adress: ");
+		m.address=sc.next();
+		System.out.println("Salary: ");
+		m.salary=sc.nextDouble();
 		e.printSalary();
 		m.printSalary();
 	}
 }
+
