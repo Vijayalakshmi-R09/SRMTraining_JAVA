@@ -32,18 +32,22 @@ public class SumOfNumbersTreeSet {
 		 System.out.println("Sum Of Numbers: "+wsum);
 	}
 	
-	public static Integer usingRecursion(Integer r)
-	{ 
-		if (r <= 1)
+	public static int rsum(Integer a[],int n)
+	{
+		if (n<=0)
 		{
-			return r;
+			return n;
 		}
-		return r + usingRecursion(r - 1);	
+		else
+		{
+			return (rsum(a,n-1)+a[n-1]);
+		}
+		
 	}
 	
+
 	public static void main(String[] args) 
 	{
-		
 		TreeSet<Integer> tset=new TreeSet<Integer>();
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter the Size of TreeSet: ");
@@ -56,12 +60,13 @@ public class SumOfNumbersTreeSet {
 	    System.out.println("TreeSet: "+tset);
 	    usingFor(tset);
 	    usingWhile(tset);
-	    System.out.println("\nUSING RECURSION");
-		System.out.println("**********************");
-		System.out.println("Sum of Numbers :");
-	    for (Integer i : tset) 
-	    {
-	    	System.out.println(usingRecursion(i));
-	    }
+            System.out.println("\nUSING RECURSION");
+	    System.out.println("**********************");
+	    Integer val[]=new Integer[tset.size()];
+            tset.toArray(val);
+            int length=val.length;
+            System.out.println("Sum of Numbers: "+rsum(val,length));
+	    
 	}
 }
+
