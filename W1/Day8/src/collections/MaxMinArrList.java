@@ -18,23 +18,7 @@ public class MaxMinArrList {
 	    	arr.add(sc.nextInt());
 	    }
 	    System.out.println("The ArrayList: "+arr);
-//	    int min=arr.get(0);
-//	    int max=arr.get(0);
-//	    for(int i=0;i<n;i++)
-//	    {
-//	    	if(arr.get(i)>max)
-//	    	{
-//	    		max=arr.get(i);
-//	    	}
-//	    	else if(arr.get(i)<min)
-//	    	{
-//	    		min=arr.get(i);
-//	    	}
-//	    }
-//	    System.out.println("\nMINIMUM in arrayList: "+min);
-//	    System.out.println("\nMAXIMUM in arrayList: "+max);
-	    System.out.println("\nMINIMUM in arrayList: "+Collections.min(arr));
-	    System.out.println("\nMAXIMUM in arrayList: "+Collections.max(arr));
+	    System.out.println("\nMINIMUM Value: "+Collections.min(arr));
+	    System.out.println("\nMAXIMUM Value: "+Collections.max(arr));
 	 }
-
 }
