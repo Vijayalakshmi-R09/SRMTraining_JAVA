@@ -25,18 +25,24 @@ public class ExIterator {
 	    {
 	    	System.out.println(itr.next());
 	    }
+	    itr.remove();
+	    System.out.println("After remove op: "+arr);
 	    System.out.println("Using ListIterator.......");
-	    ListIterator<Integer> litr=arr.listIterator();//notes:list iterator is bi-directional
+	    ListIterator<Integer> litr=arr.listIterator();//notes:list iterator is bi-directionaal
 	    System.out.println("Forward Iteration");
 	    while(litr.hasNext())
 	    {
 	    	System.out.println(litr.next());
 	    }
+	    litr.add(5);
+	    System.out.println("After adding element: "+arr);
 	    System.out.println("Backward Iteration");
 	    while(litr.hasPrevious())
 	    {
 	    	System.out.println(litr.previous());
 	    }
+	    
+	    
 	}
 
 }
