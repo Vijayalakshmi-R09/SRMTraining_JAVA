@@ -23,6 +23,6 @@ public class EmpTreeMapOp {
 			System.out.println(i.getKey()+" : "+i.getValue());
 		}
 		System.out.println("\nFirst Record: "+tm.get(1));
-		System.out.println("\nEmployee Record with Id(1003): "+tm.get(3));
+		System.out.println("\nEmployee Record at Index 3: "+tm.get(3));
 	}
 }
