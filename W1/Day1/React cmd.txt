@@ -1,7 +1,0 @@
-to craete a react.js proj
-----------------------------
-
-to install globally-->npm install create-react-app --global
-to create-->create-react-app proj01
-npm start--->to run the proj
-
