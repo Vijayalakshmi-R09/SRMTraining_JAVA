@@ -1,0 +1,12 @@
+to craete a react.js proj
+----------------------------
+
+to install globally-->npm install create-react-app --global
+to create-->create-react-app proj01
+npm start--->to run the proj
+
+to install yup
+----------------
+npm install formit yup --save
+
+npm install bootstrap@4.5.0 jquery popper.js --save
