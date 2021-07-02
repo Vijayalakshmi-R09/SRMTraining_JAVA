@@ -25,6 +25,7 @@ public class AlgoCollections {
 	    System.out.println("Minimum Element: "+Collections.min(arrlist));
 	    System.out.println("Enter a element to Perform Binary Search: ");
 	    int num=sc.nextInt();
+            Collections.sort(arrlist);
 	    System.out.println("Output: "+Collections.binarySearch(arrlist,num));//if element not present na it will return(-(insertion position)-1)
 	}
 }
