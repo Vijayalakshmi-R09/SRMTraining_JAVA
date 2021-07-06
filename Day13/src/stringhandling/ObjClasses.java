@@ -2,27 +2,28 @@ package stringhandling;
 
 public class ObjClasses 
 {
-	int empid;
-	String ename;
-	int age;
-	
-	
-	public ObjClasses(int empid, String ename, int age) {
-		super();
-		this.empid = empid;
-		this.ename = ename;
-		this.age = age;
-	}	
-		
-	void display()
-	{
-		System.out.println("EmpID: "+empid+"\nEmpName: "+ename+"\nAge: "+age);
-	}
+    String name;
 
-
+    ObjClasses(String n)
+    {
+    	this.name=n;
+    	System.out.println("Constructor invoked");
+    	System.out.println("Name: "+name+"\n");
+    }
+    
+    protected void finalize()
+    {
+    	System.out.println("\nGarbage collected ...");
+    }
+    
 	public static void main(String[] args) 
 	{
-		ObjClasses ob=new ObjClasses(1002, "Sibi", 25);
-		ob.display();
+		ObjClasses ob1=new ObjClasses("Sunny");
+		ObjClasses ob2=new ObjClasses("Sunny");
+		System.out.println("\nCheck two Objects are equal: "+ob1.equals(ob2));
+		System.out.println("\nClass Name (ob2): "+ob2.getClass());
+		System.out.println("\nHashcode (ob1): "+ob1.hashCode());
+		ob1=null;
+		System.gc();
 	}
 }
