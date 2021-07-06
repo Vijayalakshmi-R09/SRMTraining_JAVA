@@ -10,7 +10,7 @@ public class Palindrome
 		{
 			for(int i=0;i<s.length;i++)
 			{
-		   		StringBuffer sb = new StringBuffer(s[i].toLowerCase());
+		   		StringBuffer sb = new StringBuffer(s[i]);
 	       			String str = sb.reverse().toString();
 	      			 if(s[i].equals(str))
 	       			{
