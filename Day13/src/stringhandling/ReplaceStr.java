@@ -9,7 +9,7 @@ public class ReplaceStr {
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter the string: ");
 		String s=sc.nextLine();
-		s=s.replace("have", "had");
+		s=s.replace("a", "i");
 		System.out.println("the replaced string: "+s);
 	}
 }
