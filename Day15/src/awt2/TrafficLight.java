@@ -14,15 +14,15 @@ public class TrafficLight extends Frame implements ItemListener
 	
 	TrafficLight()
 	{
-		 add(red);
+	 add(red);
          add(yellow);
          add(green);
          add(msg);
          red.setBounds(50,100,70,30);
          yellow.setBounds(150,100,70,30);
          green.setBounds(250,100,70,30);
-         msg.setBounds(50,150,70,20);
- 		 msg.setFont(new Font("Serif", Font.BOLD, 30));
+         msg.setBounds(50,150,130,20);
+ 		 msg.setFont(new Font("Serif", Font.BOLD, 15));
          red.addItemListener(this);
          yellow.addItemListener(this);
          green.addItemListener(this);
@@ -67,6 +67,6 @@ public class TrafficLight extends Frame implements ItemListener
         tl.setVisible(true);
         tl.setSize(600,600);
         tl.setTitle("Traffic Lights"); 
-        tl.setBackground(Color.darkGray);
+//        tl.setBackground(Color.darkGray);
 	}
 }
